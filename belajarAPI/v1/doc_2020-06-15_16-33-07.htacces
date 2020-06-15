@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^employes/?$ employees.php [NC, L]
+RewriteRule ^employes/([0 - 9]+)/?$ employees.php?id=$1 [NC, L]
+AddType application/x-httpd-php5 .php
